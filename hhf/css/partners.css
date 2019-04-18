@@ -1,0 +1,254 @@
+/* 引入底部footer */
+.my_footer{width:100%;overflow:hidden;}
+/* 顶部:partners */
+body{/*overflow: hidden*/;width:100%;min-width:1024px;}
+/*遮罩层*/
+.box{
+	position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	z-index:99;
+	background:rgba(0,0,0,0.4);
+	margin:0;padding:0;
+	display:none;
+	color:#fff;
+}
+/*保存右侧栏发送成功后的响应信息*/
+/*#res{
+	width:300px;
+	height:50px;
+	background:rgba(0,0,0,.5);
+	font-size:18px;
+	line-height:50px;
+	position:relative;
+	top:50%;
+	left:50%
+	z-index:1000;
+}*/
+.partner{width:100%;transition:all .3s linear;position: relative;}
+.partner .top_lf span{
+	font-size:10px;
+	line-height:12px;
+	letter-spacing:3.3px;
+	font-family: FuturaDemiCRegular;
+	position:absolute;
+	top:40px;
+	left:5%;
+}
+.partner .top_lf span::after{
+	content:"";
+	width:7px;
+	border:1.5px solid #000;
+	position:absolute;
+	top:19px;
+	left:43%;
+}
+/*左侧菜单栏*/
+.sub-icons {
+    position: fixed;
+    cursor: pointer;
+    width: 68px;
+    height: 60px;
+    border: 3px solid #fff;
+    z-index: 100;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+	top:45%;left:0;
+}
+
+.sub-icons:before {
+    content: "";
+    display: block;
+    background: url(../images/icons-s38dcd512ab.png) 0 -549px no-repeat;
+    width: 28px;
+    height: 18px;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    z-index: 2
+}
+
+.sub-icons-black:before {
+    background: url(../images/icons-s38dcd512ab.png) 0 -572px no-repeat;
+    width: 28px;
+    height: 18px
+}
+.sub-icons:before {
+	background: url(../images/icons-s38dcd512ab.png) 0 -572px no-repeat;
+    width: 28px;
+    height: 18px
+}
+.sub-icons:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #fff
+}
+.sub-icons-black:after {
+    background: #000;
+}
+.sub-icons:after { background: #000}
+.sub-icons:hover:after {
+    width: 0
+}
+ .sub-icons:hover:before {
+    background: url(../images/icons-s38dcd512ab.png) 0 -572px no-repeat;
+    width: 28px;
+    height: 18px
+}
+
+.sub-icons:hover.sub-icons-black:before {
+    background: url(../images/icons-s38dcd512ab.png) 0 -549px no-repeat;
+    width: 28px;
+    height: 18px
+}
+
+.sub-icons,.sub-icons-black {
+    border: 3px solid #000
+}
+
+ /*中间部分 */
+.partner .item_list {
+	 width:72%;
+	 height:238px;
+	 border:1px solid #ebebeb;
+	 position:relative;
+	 left:10%;top:100px;
+	 overflow:hidden;
+	 padding:50px 50px 6px;
+ }
+.item_i{
+	width:300px;
+	height:190px;
+	border:3px solid #000;
+	position:absolute;
+	overflow:hidden;
+}
+.lf_item{
+	background:url("../images/385-part1.jpg") 55px 50px no-repeat;
+	z-index:30;
+}
+.rt_item{
+	background:url("../images/386-part2.jpg") 55px 35px no-repeat;
+	position: absolute;
+	left: 406px;
+}
+.item_one,.item_two{
+	width:0px;
+	height:190px;
+	background:url("../images/item_one.png")-2px -1px  no-repeat;
+	z-index:555;
+	transition: all .3s linear;
+}
+.item_i:hover .item_one{
+	width: 300px;
+}
+.item_two{
+	background:url("../images/item_two.png") -2px -1px  no-repeat;
+}
+.item_i:hover .item_two{
+	width:300px;
+}
+ /*右侧边栏 */
+div.rt_aside{width:117px;height:100%;position:absolute;top:40px;right:3%;}
+div.rt_aside div.top_languages{
+	font:10px FuturaDemiCRegular;
+	letter-spacing: 2px;
+	font-weight: bold ;
+	position:absolute;
+	top:0;	
+}	
+div.rt_aside div.rt_aside_images>img{
+	width:66px;
+	position:absolute;
+	right:4%;
+	top:45%;
+}
+div.rt_aside div.rt_aside_text{
+	width:66px;
+	font:10px FuturaDemiCRegular;
+	font-weight: bold ;
+	position: absolute;
+	right:3%;
+	top:55%;
+}
+/* 底部：按钮 */
+div.item_list_end{margin-top:150px;}
+.end_title{
+	font:24px FuturaDemiCRegular ;
+	color:#000;
+	text-transform: uppercase;
+	line-height:50px;
+	padding-bottom:20px;
+	text-align:center;
+}
+.sr_btn{
+	display:block;
+	height:60px;
+	width:190px;
+	border:3px solid #000;
+	font:14px FuturaDemiCRegular ;
+	text-transform: uppercase;
+	line-height:60px;
+	background:#000;
+	color:#000;
+	position:relative;
+	right:-40%;	
+	margin-top:20px;
+	overflow:hidden;
+	/*transition:all 0.15s ease-in;*/
+	z-index:10;
+}
+.sr_btn:after{
+	content:"";
+	position:absolute;
+	z-index:-1;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	-webkit-transition: all .3s;
+	transition:all .3s;
+	width:100%;
+	height:60px;
+	top:0;
+	right:0;
+	background:#fff;
+}
+.sr_btn:hover{color:#fff;background:#000;}
+.sr_btn:hover:after{width:0;}
+
+.toTop>a>i{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	border:1px solid #000;
+	border-radius:50%;
+}
+.toTop>a>i::after{
+	content:"";
+	display:inline-block;
+	margin-left:20px;
+	width:15px;
+	height:15px;
+	background:url("../images/icons-s38dcd512ab.png")0px -223px no-repeat;
+	position:absolute;
+	bottom:15px;
+	left:-5px;
+}
+.toTop>a{position: relative;left:10px;bottom:60px;}
+.toTop>a>b{position:absolute;bottom:15px;margin-left:10px;}
+.toTop>a:hover i{background:#000;}
+.toTop>a:hover i::after{background:url("../images/icons-s38dcd512ab.png")0px -237px no-repeat;}
+/*右侧隐藏表单：send request*/
+

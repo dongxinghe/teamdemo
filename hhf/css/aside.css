@@ -1,0 +1,113 @@
+html,body{
+	height:100%;
+}
+div.aside_one{
+	height:100%;
+	position:fixed;
+	width:320px;
+	background:#000;
+	top:0;
+	left:0;
+	color:#fff;
+	box-sizing:border-box;
+	z-index:999;
+	/* transition:all .3s linear; */
+	margin-left:-320px;
+}
+div.aside_one.active{
+	transition:all .3s linear;
+	margin-left:0;
+}
+div.aside_one.disabled{
+	transition:all .3s linear;
+	margin-left:-320px;
+}
+div.aside_one_arvin{
+	position:absolute;
+	left:15%;
+	top:25%;
+}
+div.aside_one_arvin>h2{
+	font-size:24px;
+	line-height:26px;
+	padding-bottom: 23px;
+	font-weight:normal;
+}
+div.aside_one_arvin>p{
+	margin-bottom:20px;
+}
+div.aside_one_arvin ul li{
+	line-height:30px;
+}
+div.aside_one_arvin ul li a{
+	position:relative;
+}
+div.aside_one_arvin ul li a:after{
+	content:"";
+	display:block;
+	height:3px;
+	background:#fff;
+	width:15px;
+	position:absolute;
+	left:45%;
+	opacity:0;
+}
+div.aside_one_arvin ul li:hover a:after{
+	opacity:1;
+}
+div.aside_one_arvin ul li a:before{
+	content:"";
+	display:block;
+	height:3px;
+	background:#fff;
+	width:15px;
+	position:absolute;
+	opacity:0;
+	left:45%;
+}
+div.aside_one_arvin ul li:hover a:before{
+	opacity:1;
+}
+
+div.aside_one_arvin>ul>li>a.disabledA{
+	color:#666;
+	font-weight:normal;
+}
+div.aside_one_arvin>ul>li>a.disabledA:after{
+	display:none;
+}
+div.aside_one_arvin>ul>li>a.disabledA:before{
+	display:none;
+}
+div.aside_one_arvin>ul>li>a{
+	color:#fff;
+	font-weight:bold;
+}
+div.aside_one_arvin ul li:last-child{
+	margin-top:20px;
+}
+div.close{
+	width:74px;
+	height:66px;
+	background:#fff;
+	position:absolute;
+	left:320px;
+	top:45%;
+	display:none;
+}
+div.close:hover{
+	cursor:pointer;
+}
+div.close>p{
+    position: absolute;
+    background: url("../images/icons-s38dcd512ab.png") 0 -333px no-repeat;
+    width: 24px;
+    height: 25px;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0 0 -12px;
+    transition: all .3s linear;
+}
+div.close:hover p{
+	transform:rotate(180deg);
+}

@@ -1,0 +1,289 @@
+
+body {
+    color: #000;
+    font: 62.5%/1.2em RobotoRegular, arial, sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: 0 0;
+    text-decoration: none;
+    color: #666
+}
+button{
+    cursor: pointer;
+	color:#fff;
+	font-size:24px;
+    width:115px;
+	height:60px;
+	background:#212121;
+	margin:5px;
+    outline:none;
+    border:none;
+}
+button.black:hover{
+    border:4px solid #212121;
+    background:#B8B8B8;
+    color:#212121;
+    font-size:24px;
+}
+button.orange:hover{
+    color:#000;
+    font-size:30px;
+    background:#000;
+    letter-spacing: 6px;
+    transition: all .3s linear;
+}
+
+div.calculator{
+    width:100%;
+    height:880px;
+}
+div.calculator>div.header span{
+	font-size:10px;
+	letter-spacing:3px;
+
+	
+} 
+
+div.calculator>div.header>div{
+	display:inline-block;
+}
+div.calculator>div.header>div:first-child{
+	position:absolute;
+	left:5%;
+	 top:25px;
+    display: inline-block;
+}
+div.calculator>div.header>div:last-child{
+    display: inline-block;
+	position:absolute;
+	right:5%;
+	 top:25px;
+}
+div.calculator>div.header>div:first-child>span:after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 43%;
+    height: 3px;
+    width: 10px;
+    background: #000;
+}
+div.calculator>div.header>div:last-child>span:after{
+    opacity: 1;
+    content: '';
+    height: 3px;
+    width: 10px;
+    background: #000;
+    position: absolute;
+    top: 18px;
+    left: 4px; 
+
+}
+div.center>div:first-child{
+	padding:13px;
+	font-size:12px;
+	lettle-space:10px;
+}
+
+h3{
+	
+	display: inline-block;
+    max-width: 170px;
+    font-size: 14px;
+    font-family: FuturaDemiCRegular;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+    position: relative;
+    font-weight: 400;
+    margin-left: 4%;
+    top: 100px;
+    letter-spacing: 3px;
+}
+h3:after {
+    content: "";
+    display: block;
+    width: 88px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+div.calculator .section {
+    width:75%;
+    height:740px;
+    text-align:center;
+    margin:0 auto;
+	margin-bottom:150px;
+	border:1px solid #ddd;
+   
+}
+
+div.calculator div.section div.center{
+    width:400px;
+    height:600px;
+    background:#303030;
+    text-align:center;
+	margin:0 auto;
+	margin-top:50px;
+    color:#fff;
+   
+}
+div.calculator div.section div.center>#radio{
+	border:1px solid #B8B8B8;
+	height:50px;
+	width:357px;
+	text-align:center;
+	line-height:50px;
+	margin:2px auto;
+	margin-top:21px;
+	padding:3px;
+	display:flex;
+	justify-content:space-around;
+}
+div.calculator div.section div.center>#radio>div{
+	display:inline-block;
+
+}
+	
+    	
+div.calculator div.section div.center>input[type=text]{
+	width:360px;
+	height:70px;
+	background:#B8B8B8;
+	text-align:right;
+	outline:none;
+	color:#000;
+    line-height:30px;
+    font-size:30px;
+    padding-right: 10px;
+}
+
+div.calculator div.section div.center>div.num{
+	text-align:center;
+	vertical-align:middle;
+	width:360px;
+    height:250px;
+	font-size:24px;
+	display:flex;
+	margin:0 auto;
+	margin-top:15px;
+	position:relative;
+	right:7px;
+
+}
+div.calculator div.section div.center>div.num>button{
+	width:115px;
+	height:60px;
+	margin-top:5px;
+
+}
+div.calculator div.section div.center>div.num+div>button{
+    font-size:16px;
+    width:365px;
+	height:60px;
+	background:#B8B8B8;
+	text-align:center;
+	margin-top:50px;
+}
+
+div.bottom >p {
+    font-size: 24px;
+    font-family: FuturaDemiCRegular;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+div.bottom>a{
+    display:block;
+    width:240px;
+    height:60px;
+    line-height: 60px;
+    border:3px solid #000;
+    background:#000;
+    font-family: FuturaDemiCRegular, Arial, sans-serif;
+    font-size: 16px;
+    color:#fff;
+    margin:0 auto;
+}
+div.bottom>a:hover{
+    background:#fff;
+    color:#000;
+}
+div #asidey{
+    cursor: pointer;
+    width: 68px;
+    height: 60px;
+    background:#000;
+    position:fixed;
+    top:45%;
+    left:0%;
+
+}
+div #asidey:hover{
+    background:#fff;
+    border:3px solid #000;
+    box-sizing: border-box;
+}
+div #asidey:hover>div{
+    position:relative;
+    top:14px;
+    width: 50px;
+    height: 34px;
+    background-position:17px  66px;
+}
+div #asidey>div{
+    width: 50px;
+    height: 44px;
+    background:url("../images/icons-s38dcd512ab.png");
+    background-position:18px  60px;
+}
+div.raside{
+    width:66px;
+    height:90px;
+    position:absolute;
+    top:43%;
+    right:5%;
+}
+div.container{
+    position:relative;
+}
+div.hide{
+    width:100%;
+    height:100%;
+    background:#ddd;
+    opacity: 0.4;
+    position:fixed;
+    display:none;
+    left:320px;
+}
+
+#shade{
+    position:absolute;
+    width:100%;
+    height:1000px;
+    left:0;
+    background-color:#000;
+    opacity:0.4;
+    display:none;
+    transition: all .3s linear;
+}
+
+footer{
+    transition: all .3s linear;
+}
+
+
+
+
+

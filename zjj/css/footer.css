@@ -1,0 +1,76 @@
+#footer{
+height:97px;
+min-width:1024px;
+color:#fff;
+background:#000;
+text-transform: uppercase;
+text-align:left;
+margin:auto;
+letter-spacing:2px;
+line-height:16px;
+font-weight:bold;
+position:relative;
+	z-index: 100;
+}
+/* 左一 */
+#footer .foot_lf{
+	position:absolute;
+	top:36px;
+	left:47px;
+	margin-left:2%;
+}
+/* 左二 */
+span.phone{
+	display:inline-block;
+}
+#footer ul>li>b{
+	position:absolute;
+	left:-35px;
+}
+#footer ul{
+	position:absolute;
+	left:45%;
+	top:36px;
+}
+#footer a{color:#fff}
+/* 第三个 */
+.foot_ct{
+	display:block;
+	position:absolute;
+	top:36px;
+	right:25%;
+}
+.foot_ct>i{
+	width:20px;
+	height:22px;
+	display:inline-block;
+	background:url("../images/icons-s38dcd512ab.png")0 -363px no-repeat;
+	position: absolute;
+    top: -3px;
+    left: -40px;
+	transition:all .3s linear;
+}
+.foot_ct:hover i{
+	left:-70px;
+}
+.foot_ct+a{
+	position:absolute;
+	top:35px;
+	right:18%;
+}
+/* 右一 */
+.foot_rt{
+	position:absolute;
+	top:35px;
+	right:5%;
+}
+.foot_rt>span{
+	width:70px;
+	height:15px;
+	background:url("../images/icons-s38dcd512ab.png")0 -390px no-repeat;
+	display:inline-block;
+}
+.foot_rt>sup{transition:all .3s linear;position:relative;left:0;}
+.foot_rt:hover sup{
+	left:-30px;
+}

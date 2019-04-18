@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	 <link type="image/x-icon" href="../images/logo-preloader.png" rel="icon">
+	<link rel="stylesheet" href="../css/base.css"/>
+	<link rel="stylesheet" href="../css/cal.css">
+	<link rel="stylesheet" href="../css/aside.css">
+	<link rel="stylesheet" href="../css/footer.css"/>
+</head>
+<body>
+<!--遮罩层-->
+<div id="shade"></div>
+<div class="container">
+  <div id="yinru_aside"></div>
+  <div class="calculator">
+	<div class="header">
+		<div>
+			<span>CALCULATOR</span>
+        </div>
+		<div>
+			<span>pyc&nbsp;&nbsp;&nbsp;&nbsp;ENG</span>
+			
+		</div>
+	</div>
+       <h3>CALCULATION OF INTERIOR DESIGN</h3>
+	<div class="section">
+        <!--左侧按钮-->
+             <div id="asidey" >
+				 <div></div>
+			 </div>
+		<!--中间计算器-->
+		<div class="center">
+               <div>INTERIOR DESIGN BY ANTBLACK</div>
+			   <input type="text" readonly="" disabled="" id="calculator_display" >
+			   <div id="radio" class="radiorow">
+			        <div class="radioitem">
+						<input id="accommodation_1" type="radio" name="gender" value="1" onchange="calc_e()" checked="">
+						<label for="accommodation_1">OFFICE</label>
+					</div>
+					<div class="radioitem">
+						<input id="accommodation_2" type="radio" name="gender" value="2" onchange="calc_e()">
+						<label for="accommodation_2">FLAT</label>
+					</div>
+					<div class="radioitem">
+						<input id="accommodation_3" type="radio" name="gender" value="3" onchange="calc_e()">
+						<label for="accommodation_3">HOME</label>
+					</div>
+			   </div>
+			   <div class="num">
+				   <div class="numrow">
+				   <button class="button black" value="7" onclick="calc_v(&quot;7&quot;)">7</button>
+				   <button class="button black" value="4" onclick="calc_v(&quot;4&quot;)">4</button>
+				   <button class="button black" value="1" onclick="calc_v(&quot;1&quot;)">1</button>
+				   <button class="button black" value="0" onclick="calc_v(&quot;0&quot;)">0</button>
+				   </div>
+				    <div class="numrow">
+				   <button class="button black" value="8" onclick="calc_v(&quot;8&quot;)">8</button>
+				   <button class="button black" value="5" onclick="calc_v(&quot;5&quot;)">5</button>
+				   <button class="button black" value="2" onclick="calc_v(&quot;2&quot;)">2</button>
+				   <button class="button black" value="." onclick="calc_v(&quot;.&quot;)">.</button>
+				   </div>
+				    <div class="numrow">
+				   <button class="button black" value="9" onclick="calc_v(&quot;9&quot;)">9</button>
+				   <button class="button black" value="6" onclick="calc_v(&quot;6&quot;)">6</button>
+				   <button class="button black" value="3" onclick="calc_v(&quot;3&quot;)">3</button>
+				   <button class="button black" value="C" onclick="calc_c(&quot;&quot;)">C</button>
+				   </div>
+				    
+			   </div>
+			        <div class="numrow" > <button onclick="calc_e()" class="button orange">CALCULATE</button></div>
+		</div>
+
+		<!--主体底部按钮-->
+		<div class="bottom">
+			<p>ORDER YOUR FUTURE INTERIOR RIGHT NOW</p>
+			<a href="">SEND REQUEST</a>
+		</div>
+	</div>
+	  <!--右侧图片-->
+	  <div class="raside">
+		  <img src="../images/logo-preloader.png" >
+	      <div>ANDREY  SOKRUTA</div>
+	  </div>
+	  <!--尾部-->
+	<footer ></footer>
+	  <div class="hide">
+	  </div>
+  </div>
+</div>
+ <script src="../js/footer.js"></script>
+ <script src="../js/yinru_aside.js"></script>
+  <script src="../js/cal.js"></script>
+</body>
+</html>

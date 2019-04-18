@@ -1,0 +1,76 @@
+div.right_aside{
+	height:100%;
+	width:117px;
+	background:#fff;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:39;
+	margin-right:0;
+	transition:all .3s linear;
+}
+div.right_aside>.right_aside_image{
+	position:absolute;
+	top:45%;
+	right:20%;
+}
+div.right_aside>.right_aside_image:hover{
+	cursor:pointer;
+}
+div.right_aside>.right_aside_image>div.text{
+	font-size:10px;
+	width:66px;
+	height:24px;
+	line-height:12px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:15px;
+}
+/*右侧边栏下的小圆扭*/
+div.right_aside>div.toNext{
+	position:absolute;
+	right:30%;
+	bottom:3%;
+}
+div.toNext{
+	width:60px;
+	height:60px;
+	border:2px solid #000;
+	border-radius:50%;
+	-webkit-animation: 1s infinite alternate arvinCircle;
+	-o-animation: 1s infinite alternate arvinCircle;
+	animation: 1s infinite alternate arvinCircle;
+}
+div.toNext:hover{
+	cursor:pointer;
+	background:#000;
+}
+div.toNext:hover i{
+	background:url(../images/icons-s38dcd512ab.png) 0 -14px no-repeat;
+}
+div.toNext>i{
+	background:url(../images/icons-s38dcd512ab.png) 0 0 no-repeat;
+	display:block;
+	width:15px;
+	height:9px;
+	position:absolute;
+	top:47%;
+	left:37%;
+}
+
+@keyframes arvinCircle {
+	0%{
+		-webkit-transform: scale(.5,.5);
+		-moz-transform: scale(.5,.5);
+		-ms-transform: scale(.5,.5);
+		-o-transform: scale(.5,.5);
+		transform: scale(.5,.5);	
+	}
+	100%{
+		-webkit-transform: scale(.8,.8);
+		-moz-transform: scale(.8,.8);
+		-ms-transform: scale(.8,.8);
+		-o-transform: scale(.8,.8);
+		transform: scale(.8,.8);
+	}
+}

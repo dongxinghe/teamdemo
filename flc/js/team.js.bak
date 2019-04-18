@@ -1,0 +1,138 @@
+//ͼƬЧ��
+
+var box = document.querySelector('#wrap');
+var divW = 60;
+var divH = 50;
+var inner = "";
+for(var i = 0; i < 100; i++) {
+    var x = i % 10;
+    var y = parseInt(i/10);
+    inner+="<div style='background-position:-"
+    +(x*divW)+"px -"+(divH*y)+"px;left:"
+    + (x*divW) + "px;top:" + (divH*y)+"px'></div>";
+}
+box.innerHTML = inner;
+var divs=box.getElementsByTagName("div");
+for(var i=0;i<divs.length;i++){
+//����ƶ���ͼƬ��ĳ��λ�ã���λ�õ�СͼƬ��ת360�㲢͸����Ϊ0
+    divs[i].onmouseover=function(){
+        this.className="active";
+    }
+}
+
+
+//添加div加以描述人物
+var link=document.createElement("link");
+			    link.rel="stylesheet";
+		link.href="css/person.css";
+		document.head.appendChild(link);
+		var person=document.getElementById("person");
+		person.innerHTML=`<h3 class="ming" style="margin-left:40px;color:#fff; font-size:29px; top:25px" id="person_name">黄海芳</h3>
+		                  <div  style="font-size: 22px;width: 200px;margin: 0 auto; margin-top: 50px;height: 250px;line-height: 50px" 
+						    id="person_des">颜值担当</div>	
+		`; 
+//照片数组
+var picBgArr=["../images/fang.jpg","../images/chen.jpg", "../images/li.jpg",
+              "../images/wu.jpg","../images/zhang.jpg","../images/fan.jpg"];
+//人名数组
+var nameArr=["黄海芳","陈明哲","李白","吴建武","张家俊","范丽晨"];
+//人物详细介绍字符串数组
+var perString=[
+            "颜值担当",
+			"技术担当",
+			"单杠玩的溜",
+			"怼天怼地",
+			"阳光男孩",
+			"吃货一枚"
+];
+//person.style.transition='all .3s linear';
+//鼠标移入人物介绍时背景颜色发生变化
+person.onmouseenter=function(){
+	person.style.background='red';
+}
+var num=0;
+var onoff=true;//���ÿ��أ���Ϊ�ж��Ƿ�����Ƭ��������
+var area=document.getElementById("cent");
+var person_name=document.getElementById("person_name");
+var person_des=document.getElementById("person_des");
+    area.onclick=function(){
+    if(onoff){
+		//����Ϊ0
+        for(var i=0;i<divs.length;i++){
+            divs[i].style.transform="skew("+(60*Math.random())+"deg)  translateZ("+(Math.random()*1000)+"px)";
+            divs[i].style.opacity="0";
+			/* if(divs[i].style.opacity=='0'){
+				person.style.display='block';
+				}else{
+				person.style.display='none';
+				} 
+			*/
+			 if(divs[divs.length-1].style.opacity=='0')
+				{div[i].style.display='none';
+			      person.style.display='block';
+			  }
+           
+		}
+       
+        onoff=false;
+    }else{
+        num+=1;
+        if(num==picBgArr.length){
+            num=0;
+        }
+        //��0Ϊ��������ʾΪ��һ��ͼ
+        for(var i=0;i<divs.length;i++){
+            divs[i].className="";
+            divs[i].style.transform="";
+            divs[i].style.opacity="";
+            divs[i].style.backgroundImage="url(../images/"+picBgArr[num]+")";
+            person_name.innerText=nameArr[num];
+			person_des.innerText=perString[num];
+		}
+        onoff=true;
+    }
+}
+
+/************************************************************************************************************/
+
+//�����¼�
+
+var container=document.getElementById("container");
+var body=document.body;
+var hide=document.getElementsByClassName("hide")[0];
+var closeBtn=document.querySelector("#yinru_aside>.aside_one>.close>p");
+closeBtn.style.background="url(../images/icons-s38dcd512ab.png) 0 -333px no-repeat";
+var asidebtn=document.getElementById("asidey");
+var aside_one=document.getElementsByClassName("aside_one")[0];
+var rside=document.getElementsByClassName('raside')[0];
+var cent=document.getElementById('cent');
+asidebtn.onclick=function(){
+	
+     body.style.marginRight="-320px";
+    closeBtn.parentNode.style.display="block";
+    aside_one.style.marginLeft=0;
+    container.style.marginRight="-520px";
+    box.style.left='58%';
+    cent.style.left='600px';
+    cent.style.width='1000px';
+    rside.style.display='none';
+    hide.style.diaplay="block";
+    shade.style.display='block';
+    shade.style.index=20;
+    overflow:hide;
+}
+closeBtn.parentNode.onclick=function(){
+    shade.style.display='none';
+    shade.style.index=-1;
+	 body.style.marginRight=0;
+    closeBtn.parentNode.style.display="none";
+    aside_one.style.marginLeft="-320px";
+    container.style.marginRight=0;
+    box.style.left='29%';
+    rside.style.display='block';
+    cent.style.left=0;
+    hide.style.diaplay="none";
+
+}
+
+/****************************************************************************************/

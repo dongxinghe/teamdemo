@@ -1,0 +1,651 @@
+html,body{
+	height:100%;
+}
+#index_Arvin{
+	height:100%;
+	margin-left:0;
+}
+#banner,#banner ul,#banner ul li{
+	height:100%;
+}
+#banner{
+	position:relative;
+	z-index:20;
+	overflow:hidden;
+}
+#banner.disabled{
+	-webkit-animation: modelHide 1.5s linear  ;
+	-o-animation: modelHide 1.5s linear  ;
+	animation: modelHide 1.5s linear  ;
+	animation-fill-mode:forwards;
+	z-index:1;
+}
+#banner.enabled{
+	-webkit-animation: modelShow 0.7s linear;
+	-o-animation: modelShow 0.7s linear;
+	animation: modelShow 0.7s linear;
+	animation-fill-mode:forwards;
+	z-index:20;
+}
+div.right_aside{
+	height:100%;
+	width:117px;
+	background:#fff;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:99;
+	margin-right:0;
+	transition:all .3s linear;
+}
+div.zzc{
+	background:#000;
+	position:fixed;
+	width:100%;
+	height:100%;
+	opacity:0.4;
+	display:none;
+	z-index:99;
+}
+div.zzc:hover{
+	cursor:pointer;
+}
+/*左侧aside按钮*/
+#banner>ul{
+	overflow:hidden;
+	height:100%;
+}
+#banner>#image1{
+	position:relative;
+	z-index:1;
+}
+#banner>#image2{
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+/*#banner>ul>li{
+	position: relative;
+	display: block;
+	list-style: none;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+}*/
+	/*左边第一个按钮*/
+.cebian_button{
+	opacity:1;
+	transition:all .3s linear;
+}
+.cebian_button.hide{
+	opacity: 0;
+}
+#banner>.cebian_button>p:first-child,
+#request>.left-menu>.cebian_button>p:first-child
+{
+	border:3px solid #fff;
+}
+.cebian_button>p:first-child{
+	width:68px;
+	height:60px;
+	position:absolute;
+	left:0;
+	z-index:10;
+	top:45%;
+}
+#banner>.cebian_button>p:first-child>i:first-child,
+#request>.left-menu>.cebian_button>p:first-child>i:first-child
+{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -549px no-repeat;
+}
+.cebian_button>p:first-child>i:first-child{
+display:block;
+width: 28px;
+height: 18px;
+position: absolute;
+top: 20px;
+left: 18px;
+z-index: 2;
+}
+.cebian_button>p:first-child>i:last-child{
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition:all .3s linear;
+}
+#banner>.cebian_button>p:first-child>i:last-child,
+#request>.left-menu>.cebian_button>p:first-child>i:last-child
+{
+	background: #fff;
+}
+.cebian_button>p:hover{
+	cursor:pointer;
+}
+.cebian_button>p:first-child:hover i:last-child{
+	width:0;
+}
+#banner>.cebian_button>p:first-child:hover i:first-child,
+#request>.left-menu>.cebian_button>p:first-child:hover i:first-child
+{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -572px no-repeat;
+}
+	/*左边第二个按钮*/
+#banner>.cebian_button>a:last-child,
+#request>.left-menu>.cebian_button>a:nth-child(2),
+#request>.left-menu>.cebian_button>a:nth-child(3),
+.right_aside_btn>a
+{
+	width:93px;
+	height:60px;
+	padding:0 48px 0 48px;
+	border:3px solid #fff;
+	position:absolute;
+	left:80px;
+	top:45%;
+	z-index:10;
+}
+#banner>.cebian_button>a:last-child>i:first-child,
+#request>.left-menu>.cebian_button>a:nth-child(2)>i:first-child,
+#request>.left-menu>.cebian_button>a:nth-child(3)>i:first-child,
+.right_aside_btn>a>i:first-child
+{
+	display:block;
+	line-height:60px;
+	color:#000;
+	font-style:normal;
+	font-weight:bold;
+	z-index:99;
+	position:relative;
+}
+#banner>.cebian_button>a:last-child>i:last-child,
+#request>.left-menu>.cebian_button>a:nth-child(2)>i:last-child,
+#request>.left-menu>.cebian_button>a:nth-child(3)>i:last-child,
+.right_aside_btn>a>i:last-child
+{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #fff;
+    transition:all .3s linear;
+}
+#banner>.cebian_button>a:last-child:hover i:first-child,
+#request>.left-menu>.cebian_button>a:nth-child(2):hover i:first-child,
+#request>.left-menu>.cebian_button>a:nth-child(3):hover i:first-child,
+.right_aside_btn>a:hover i:first-child
+{
+	color:#fff;
+}
+#banner>.cebian_button>a:last-child:hover i:last-child,
+#request>.left-menu>.cebian_button>a:nth-child(2):hover i:last-child,
+#request>.left-menu>.cebian_button>a:nth-child(3):hover i:last-child,
+.right_aside_btn>a:hover i:last-child
+{
+	width:0;
+}
+/*右侧栏的*/
+div.right_aside>.right_aside_image{
+	position:absolute;
+	top:45%;
+	right:20%;
+}
+div.right_aside>.right_aside_image:hover{
+	cursor:pointer;
+}
+div.right_aside>.right_aside_image>div.text{
+	font-size:10px;
+	width:66px;
+	height:24px;
+	line-height:12px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:15px;
+}
+/*第二模块*/
+#weCreate{
+	height:100%;
+	width: 100%;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	z-index:1;
+	opacity:0;
+	background:#fff;
+}
+#weCreate.disabled{
+	-webkit-animation: modelHide 1.5s linear  ;
+	-o-animation: modelHide 1.5s linear  ;
+	animation: modelHide 1.5s linear  ;
+	animation-fill-mode:forwards;
+	z-index:1;
+}
+#weCreate.enabled{
+	-webkit-animation: modelShow 0.7s linear;
+	-o-animation: modelShow 0.7s linear;
+	animation: modelShow 0.7s linear;
+	animation-fill-mode:forwards;
+	z-index:30;
+}
+#weCreate:before{
+	content:"";
+	display: table;
+}
+#weCreate>div.weCreate_top{
+	margin-top: 90px;
+	margin-left: 115px;
+	margin-right: 150px;
+	position: relative;
+	z-index:10;
+}
+#weCreate>div.weCreate_top>div.bgBorder{
+	position: absolute;
+	border:1px solid #ebebeb;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+#weCreate>div.weCreate_top>.left>h1{
+	margin-top:-17px;
+	font-size:160px;
+	float:left;
+	padding-right: 43px;
+	position:relative;
+	left:-68px;
+	top:120px;
+	z-index:3;
+}
+#weCreate>div.weCreate_top>.left>ul{
+	float:left;
+	position: relative;
+	left: 220px;
+	top: 44px;
+}
+#weCreate>div.weCreate_top>.left>ul>li{
+	font-size: 24px;
+	font-weight:bold;
+	line-height: 36px;
+	position: relative;
+}
+div.weCreate_image{
+	position: absolute;
+	right: -150px;
+	bottom: -90px;
+	width:75%;
+	z-index: 1;
+}
+div.weCreate_image>img{
+	display:block;
+	width: 100%;
+	min-width: 100%;
+}
+#weCreate>.weCreate_leftDown>span{
+	font-size: 16px;
+	line-height: 18px;
+	position: absolute;
+	bottom: 40px;
+	left:115px;
+}
+#weCreate>.weCreate_leftDown>div:last-child{
+	position:relative;
+	left:430px;
+	top:10px;
+}
+/*weCreate左侧按钮样式*/
+#weCreate>.cebian_button>p:first-child,#attention>.cebian_button>p:first-child{
+	border:3px solid #000;
+}
+#weCreate>.cebian_button>p:first-child>i:first-child,#attention>.cebian_button>p:first-child>i:first-child{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -572px no-repeat;
+}
+#weCreate>.cebian_button>p:first-child:hover i:first-child,#attention>.cebian_button>p:first-child:hover i:first-child{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -549px no-repeat;
+}
+#weCreate>.cebian_button>p:first-child>i:last-child,#attention>.cebian_button>p:first-child>i:last-child{
+	background: #000;
+}
+
+/*第三模块样式*/
+#attention{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	z-index:1;
+	background:#fff;
+}
+#attention.disabled{
+	-webkit-animation: modelHide 1.5s linear  ;
+	-o-animation: modelHide 1.5s linear  ;
+	animation: modelHide 1.5s linear  ;
+	animation-fill-mode:forwards;
+	z-index:1;
+}
+#attention.enabled {
+	-webkit-animation: modelShow 0.7s linear;
+	-o-animation: modelShow 0.7s linear;
+	animation: modelShow 0.7s linear;
+	animation-fill-mode:forwards;
+	z-index: 20;
+}
+div.slide_wrap{
+	height:100%;
+	transition:all .8s ease-out;
+}
+#attention>div.slide_wrap>div.item{
+	width: 100%;
+	height: 100%;
+	position:relative;
+	float:left;
+}
+#attention>div.slide_wrap>.item.left {
+	-moz-transform: translate(-1000%, -50%);
+	-ms-transform: translate(-1000%, -50%);
+	-webkit-transform: translate(-1000%, -50%);
+	transform: translate(-100%);
+}
+#attention>div.slide_wrap>div.item>div{
+	width: 520px;
+	position: absolute;
+	left: 37%;
+	top: 24%;
+}
+#attention>div.slide_wrap>.item{
+	transition:all .8s ease-out;
+}
+/*第三模块页面公共的样式*/
+#attention>div.slide_wrap>div.item>div>.title{
+	margin-top: -17px;
+	font-size: 160px;
+	line-height: 162px;
+	float: left;
+	padding-right: 16px;
+	font-family: FuturaDemiCRegular;
+	color: #000;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul{
+	width:315px;
+	position:relative;
+	float:left;
+	font-size: 24px;
+	font-family: FuturaDemiCRegular;
+	color: #000;
+	line-height: 36px;
+	height: 310px;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:nth-child(5){
+	margin-top:80px;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:nth-child(6){
+	display: block;
+	font-style: normal;
+	font-family: RobotoRegular;
+	font-size: 14px;
+	line-height: 22px;
+	color: #000;
+	height: 168px;
+	margin-top:30px;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>b{
+	position: relative;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: FuturaDemiCRegular;
+	color: #000;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>div{
+	display:inline-block;
+	position:relative;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>div.toNext{
+	top: 28px;
+	left: 30px;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>div.toNext:hover i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 6px -157px no-repeat;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>div>i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 6px -137px no-repeat;
+	height: 22px;
+	top:28%;
+	left: 35%;
+}
+/*第三模块第一页的样式*/
+#attention>div.slide_wrap>div.item>div.it_01.enabled{
+	-webkit-animation: modelShow 0.7s linear;
+	-o-animation: modelShow 0.7s linear;
+	animation: modelShow 0.7s linear;
+	z-index:20;
+}
+#attention>div.slide_wrap>div.item>div.it_01.disabled {
+	-webkit-animation: modelHide 1.5s linear  ;
+	-o-animation: modelHide 1.5s linear  ;
+	animation: modelHide 1.5s linear  ;
+	z-index:1;
+}
+/*第三模块第二页面的样式*/
+div.toBefore{
+	width:60px;
+	height:60px;
+	border:2px solid #000;
+	border-radius:50%;
+	-webkit-animation: 1s infinite alternate arvinCircle;
+	-o-animation: 1s infinite alternate arvinCircle;
+	animation: 1s infinite alternate arvinCircle;
+}
+div.toBefore:hover{
+	cursor:pointer;
+	background:#000;
+}
+div.toBefore:hover i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -14px no-repeat;
+}
+div.toBefore>i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 0 no-repeat;
+	display:block;
+	width:15px;
+	height:9px;
+	position:absolute;
+	top:47%;
+	left:37%;
+}
+#attention>div.slide_wrap>div.item>div.it_02>.text>ul>li:last-child>div.toBefore:hover i,
+#attention>div.slide_wrap>div.item>div.it_03>.text>ul>li:last-child>div.toBefore:hover i,
+#attention>div.slide_wrap>div.item>div.it_04>.text>ul>li:last-child>div.toBefore:hover i,
+#attention>div.slide_wrap>div.item>div.it_05>.text>ul>li:last-child>div.toBefore:hover i
+{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 6px -78px no-repeat;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>div.toBefore>i {
+	background: url(../imageLogo/icons-s38dcd512ab.png) 6px -60px no-repeat;
+}
+#attention>div.slide_wrap>div.item>div>.text>ul>li:last-child>div.toBefore{
+	top: 28px;
+	left: -31px;
+}
+#attention>div.slide_wrap>div.item>div.it_02>.text>ul>li:last-child,
+#attention>div.slide_wrap>div.item>div.it_03>.text>ul>li:last-child,
+#attention>div.slide_wrap>div.item>div.it_04>.text>ul>li:last-child,
+#attention>div.slide_wrap>div.item>div.it_05>.text>ul>li:last-child
+{
+	position:relative;
+	left:-68px;
+}
+/*第三模块的第五页面*/
+#attention>div.slide_wrap>div.item>div.it_05>.text>ul>li:last-child>div.toNext:hover i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -14px no-repeat;
+}
+#attention>div.slide_wrap>div.item>div.it_05>.text>ul>li:last-child>div.toNext>i {
+	background: url(../imageLogo/icons-s38dcd512ab.png) 0 0 no-repeat;
+	width:15px;
+	height:9px;
+	top:47%;
+	left:37%;
+}
+
+/*第四模块样式*/
+#request{
+	height: 100%;
+	width: 100%;
+	background:url("../imageHome/12-b-img3.jpg") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	opacity：0;
+	top:0;
+}
+#request.disabled{
+	-webkit-animation: modelHide 1.5s linear  ;
+	-o-animation: modelHide 1.5s linear  ;
+	animation: modelHide 1.5s linear  ;
+	animation-fill-mode:forwards;
+	z-index:1;
+}
+#request.enabled{
+	-webkit-animation: modelShow 0.7s linear;
+	-o-animation: modelShow 0.7s linear;
+	animation: modelShow 0.7s linear;
+	animation-fill-mode:forwards;
+	z-index:20;
+}
+#request>.left-menu>.cebian_button_title{
+	font-size: 24px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: FuturaDemiCRegular, Arial, sans-serif;
+	position: absolute;
+	left: 4%;
+	top:34%;
+	opacity:1;
+	transition:all .3s linear;
+}
+#request>.left-menu>.cebian_button_title.hide{
+	opacity:0;
+}
+#request>.left-menu>.cebian_button_title>img:last-child{
+	margin-top: 25px;
+}
+#request>.left-menu>.cebian_button>a:nth-child(3){
+	left: 280px;
+	border:3px solid #000;
+}
+#request>.left-menu>.cebian_button>a:nth-child(3)>i:first-child{
+	color:#fff;
+}
+#request>.left-menu>.cebian_button>a:nth-child(3)>i:last-child{
+	background:#000;
+}
+#request>.left-menu>.cebian_button>a:nth-child(3):hover i:first-child{
+	color:#000;
+}
+
+/*第四模块 right-menu样式*/
+div.right-menu{
+	width:320px;
+	height:100%;
+	position:fixed;
+	top:0;
+	right:0;
+	background:#000;
+
+}
+div.right-menu>.right_container{
+	margin-left: 48px;
+}
+div.right-menu>.right_container>.right_container_title{
+	width:66px;
+	position:absolute;
+	top:40px;
+	color:#fff;
+	text-align:center;
+}
+.right_container_title>p{
+	margin-top:10px;
+}
+div.right-menu>.right_container>.right_container_section>.right_aside_or{
+	font-size: 24px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: FuturaDemiCRegular, Arial, sans-serif;
+	position: absolute;
+	top:34%;
+}
+div.right-menu>.right_container>.right_container_section>.right_aside_or>img{
+	margin-top:25px;
+}
+div.right-menu>.right_container>.right_container_section>.right_aside_btn>a{
+	left:48px;
+}
+div.right-menu>.right_container>.right_container_section>p{
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+	position: absolute;
+	top:56%;
+}
+div.right-menu>.right_container>.right_container_section>ul{
+	position: absolute;
+	top:63%;
+}
+div.right-menu>.right_container>.right_container_section>ul>li{
+	color:#fff;
+	font-size:14px;
+	line-height: 22px;
+	font-family:FuturaDemiCRegular;
+}
+div.right-menu>.right_container>.right_container_section>ul>li>strong{
+	font-weight:400;
+	display:inline-block;
+	width:35px;
+	vertical-align:top;
+}
+div.right-menu>.right_container>.right_container_section>ul>li>span{
+	display:inline-block;
+}
+div.right-menu>.right_container>.right_container_footer{
+	position: absolute;
+	left:30px;
+	bottom:2%;
+}
+div.right-menu>.right_container>.right_container_footer>div.to_top{
+	border:2px solid #fff;
+}
+div.right-menu>.right_container>.right_container_footer>div.to_top:hover{
+	background: #fff;
+}
+div.right-menu>.right_container>.right_container_footer>div.to_top>i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -237px no-repeat;
+}
+div.right-menu>.right_container>.right_container_footer>div.to_top:hover i{
+	background:url(../imageLogo/icons-s38dcd512ab.png) 0 -222px no-repeat;
+}
+div.right-menu>.right_container>.right_container_footer>span{
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: absolute;
+	bottom: 19px;
+	left: 67px;
+}
+
+
+
+
+
+
+
+
+
+
+
